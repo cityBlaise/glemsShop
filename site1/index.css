@@ -1,0 +1,344 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    background-color: #f0f0f029;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family:'sambatsregular';
+}
+
+@font-face {
+    font-family: 'playlistscript';
+    src: url('./fonts/playlist/fontsfree-net-playlistscript-webfont.woff2') format('woff2'),
+         url('./fonts/playlist/fontsfree-net-playlistscript-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sambatsregular';
+    src: url('./fonts/sambats/sambats-515yl-webfont.woff2') format('woff2'),
+         url('./fonts/sambats/sambats-515yl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'jully_juliaregular';
+    src: url('./fonts/julia/jully-julia-webfont.woff2') format('woff2'),
+         url('./fonts/juliq/jully-julia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.container
+{ 
+    background-image: url(./b.jpg);
+    /* width: 93%;  */
+    padding-inline: .6em;
+    padding-bottom: 2em;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo{ 
+    padding: 5px;
+    background-image: url(./back.jpg);
+    background-size: cover;
+    font-family: 'playlistscript';
+}
+.logo h3{ 
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1px;
+    font-size:2.1em;
+}
+.logo h4{  
+    font-family: 'sambatsregular';
+    margin: 0; 
+    text-align: center;
+    margin-top: 2px;
+    color: rgb(48, 18, 146);
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+
+nav{
+    display: flex; 
+    border-radius: 4px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5px;
+    padding-block: 5px;
+    overflow: hidden;
+    box-shadow: rgb(220, 217, 217) 0px 3px 5px 0px;
+}
+
+.wrapper-profile{    
+    font-size: 12px; 
+    padding: 0;
+}
+.wrapper-profile legend{ 
+    max-width: 70px;
+    text-align: center;
+}
+.profile-img-wrapper{  
+    display: flex;
+    align-items: center;
+    margin: 0; 
+    height: 30px;
+    border-radius: 15px;
+    padding-right: 8px;
+    background-color: rgb(164, 239, 239); 
+}
+.profile-img-wrapper .img-wrapper{
+    width: 30px;
+    border-radius: 50%;
+    transform: translateX(-2px);
+    border: white 2px solid;
+
+}
+
+ 
+ 
+.img-wrapper{  
+    height: 100%;
+    overflow: hidden; 
+}
+
+.buttons-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.buttons-wrapper button{
+    color: white;
+    overflow: hidden;
+    border-radius: 50%; 
+    border: none;
+    padding-block: 5px; 
+    height: 30px;
+}
+
+ 
+ 
+.para1{
+    color: rgb(0, 0, 0); 
+    font-style: italic; 
+    font-size: 16px;
+    line-height: 10px;
+    letter-spacing: 2px; 
+    font-family: 'jully_juliaregular';
+    margin-left: .5em;
+}
+
+.hidden-x-scrollbar{   
+    height: 70px;
+    overflow: hidden; 
+}
+
+.categories-wrapper{   
+    display: grid;
+    grid-auto-flow: column; 
+    gap: 10px;
+    overflow-x: scroll; 
+    padding: .1em;
+    font-size: 10px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 2em;
+}
+
+.categorie-item{
+    box-shadow: rgba(30, 29, 29, 0.08) 0px 0px 7px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(236, 57, 129);
+    padding: 2px;
+    width: 70px;
+    font-style: italic;
+    display: grid;
+    gap: 4px;
+    text-align: center;
+    grid-auto-flow: row;
+}
+ 
+
+.categorie-item .img-wrapper{  
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    overflow: hidden; 
+}
+
+
+.categorie-item .img-wrapper img{  
+    height: 100%;
+   
+}
+
+
+.popular-product-wrapper{
+    display: grid;
+    grid-auto-flow: column; 
+    gap: 15px;
+    overflow-x: scroll; 
+    padding: .1em;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 2em; 
+    height: 100%;
+}
+
+.pp{
+    
+    height: 250px; 
+}
+
+.popular-product-wrapper{
+    padding-left: .5em; 
+    padding-bottom: 1.9em;
+}
+.popular-product-item{ 
+    position: relative;
+    height: 210px;
+    width: 180px; 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(132, 130, 130, 0.37) 0px 2px 7px;
+    padding: 5px;
+    gap: 6px;
+    padding-block: 8px;
+    color: rgb(66, 62, 62);
+    border-radius: 10px;
+    padding-bottom: .7em;
+}
+.popular-product-item .img-wrapper{
+   flex: 1 0 80%;
+   overflow: hidden;
+    border: none;
+    border-radius: 10px;  
+}
+
+
+ 
+ 
+.like-add-to-cart{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.like-add-to-cart button{
+    color: white; 
+    overflow: hidden;
+    border-radius: 50%; 
+    border: none;  
+    width: 29px;
+    background-color: rgb(255, 255, 255); 
+}
+.details{
+    font-size: 13px; 
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    font-style: italic;
+}
+
+ 
+
+.details .prix{ 
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.new-arrival-wrapper{ 
+    width: 95%;
+    margin-inline: auto; 
+    display: grid;
+    gap: 15px;
+    flex-direction: column; 
+}
+.arrival-item{
+    z-index: 99999999999999;
+    background-color: white;
+    position: relative;
+    padding: 6px;
+    box-shadow: rgba(0, 0, 0, 0.401) 0px 2px 7px;
+    height: 290px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1px;
+}
+
+ .arrival-item .button{
+    position: absolute;  
+}
+
+.arrival-item .details{ 
+    padding: .3em; 
+    text-transform: capitalize;
+    color: rgb(45, 45, 45); 
+    font-size: .6em;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+.arrival-item .img-wrapper{
+    border-radius: 10px; 
+    height: 90%;
+    overflow: hidden;
+    border: none;
+}
+
+.add-to button{
+    width: 100%;
+    display: flex;
+    height: 30px;
+    background-color: rgb(46, 255, 178);
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+.add-to img{
+    height: 100%;
+    object-fit: contain;
+}
+.arrival-item .button{
+    top: 10px;
+    right: 10px;
+
+}
+
+ 
+
+.add-to button:hover{
+    background-color: rgb(45, 172, 121);
+
+}
