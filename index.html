@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The best to be for dressing</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./fonts/favicon_package_v0.16/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./fonts/favicon_package_v0.16//favicon-16x16.png">
@@ -13,283 +15,238 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>The woman eshop made by womans for womans</title>
 </head>
-<body>
-    <div class="logo">
-        <h3><div class="img-wrapper"><img src="./fonts/favicon_package_v0.16/android-chrome-512x512.png" alt=""></div> glem's collection</h3>
-        <h4>Fripperie de qualité <br>Bien se vêtir sans se ruiner</h4> 
-    </div>
-    <div class="container">
+<body >
+ 
+        <div class="overlay"  data-overlay></div>
+        <div class="modal active" data-modal>
+    
+            <div class="modal-close-overlay  active" data-modal-overlay></div>
         
-        <nav>
-            <div class="wrapper-profile">
-                <figure class="profile-img-wrapper">
-                    <div class="img-wrapper">
-                        <img src="./fonts/favicon_package_v0.16/android-chrome-512x512.png" alt="">
-                    </div>
-                    <legend>user name's</legend>
-                </figure>
+            <div class="modal-content">
+        
+              <button class="modal-close-btn" data-modal-close> 
+              </button>
+        
+              <div class="newsletter-img">
+                <img src="./images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+              </div>
+        
+              <div class="newsletter">
+        
+                 
+        
+                  <div class="newsletter-header">
+        
+                    <h3 class="newsletter-title">Abonnez vous à <b>GLEM's</b>.</h3>
+        
+                    <p class="newsletter-desc">
+                      Abonnez vous à nos différents canaux pour pour ne pas manquer les nouveautése et nos réductions.
+                    </p>
+        
+                  </div>
+        
+                  <div class="social-media">
+                    <div class="social-item"><span><ion-icon name="logo-facebook"></ion-icon></span> <b>GLEM's Collection</b></div>
+                    <div class="social-item"><span><ion-icon name="logo-tiktok"></ion-icon></span><b>glem.s_collection</b></div>
+                    <div style="display: none;" class="social-item"><span><ion-icon name="logo-whatsapp"></ion-icon></span></div>
+                 </div>
+        
+                  <button type="button" class="btn-newsletter">Done</button>
+        
+               
+        
+              </div>
+        
+            </div>
+        
+          </div>
+          <div class="main-container blur">
+        <div class="brand-header">
+            <div class="img"> <img  src="./images/android-chrome-192x192.png" alt=""></div>
+           
+           <span>glem's</span> 
+        </div>
+        <header class="header">
+           
+            <div class="header-banner">
+                <img src="./images/blog-2.jpg"  alt=""  width="250" height="250">
+                <div class="desc">
+                    The first womans' clothes store made by womans for womans
+                </div>
             </div>
 
-            <div class="buttons-wrapper">
-                <a href="#"><button>
-                    
-                    <div class="img-wrapper"><img src="./imgs/icons8-login-64.png" alt=""></div></button></a>
-                <a href="#"><button>
-                    
-                    <div class="img-wrapper"><img src="./icons/cart-svgrepo-com.svg" alt=""></div></button></a>
+            <div class="mobile-bottom-menu">
+                <button class="action-btn">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+            
+                    <span class="count">0</span>
+                  </button>
+            
+                <button class="action-btn">
+                    <ion-icon name="home-outline"></ion-icon>
+                </button>
+                <button class="action-btn">
+                    <ion-icon name="heart-outline"></ion-icon>
+            
+                    <span class="count">0</span>
+                  </button>
+            
+                  <button class="action-btn" data-mobile-menu-open-btn>
+                    <ion-icon name="grid-outline"></ion-icon>
+                  </button>
             </div>
-        </nav>
+        </header> 
 
-        <p class="para1">Find Your collection </p>
-
-        <div class="hidden-x-scrollbar">
-            <div class="categories-wrapper">
+        <div class="categorie">
+            <div class="categorie-container ">
                 <div class="categorie-item">
-                 <div class="img-wrapper">
-                         <img src="./imgs/crop-top.png" alt="">
-                </div>
-                    <div>crop top</div>
+                    <img src="./images/icons/dress.svg" width="50" height="50" alt="">
+                    <div class="desc">
+                        <div class="title">
+                            <span>robe</span>
+                            <span>(20)</span>
+                        </div>
+                        <a href="#">show all</a>
+                    </div>
                 </div>
                 <div class="categorie-item">
-                    <div class="img-wrapper">
-                            <img src="./imgs/body_sweat.png" alt="">
-                   </div>
-                       <div>body sweat</div>
-                   </div>
-                   <div class="categorie-item">
-                    <div class="img-wrapper">
-                            <img src="./imgs/robe.png" alt="">
-                   </div>
-                       <div>robe</div>
-                   </div>
-                   <div class="categorie-item">
-                    <div class="img-wrapper">
-                            <img src="./imgs/combishort.png" alt="">
-                   </div>
-                       <div>combishort</div>
-                   </div>
-                   <div class="categorie-item">
-                    <div class="img-wrapper">
-                            <img src="./imgs/tshirt.png" alt="">
-                   </div>
-                       <div>tshirt</div>
-                   </div>
-                  
-             </div>
-        </div>
-       
-        <p class="para1">popular product</p>
-        <div class="hidden-x-scrollbar pp"> 
-            <div class="popular-product-wrapper"> 
-                    <div class="popular-product-item"> 
-                        <div class="img-wrapper">
-                            <img src="./imgs/robe.png" alt="">
+                    <img src="./images/icons/dress.svg" width="50" height="50" alt="">
+                    <div class="desc">
+                        <div class="title">
+                            <span>Combishort</span>
+                            <span>(40)</span>
                         </div>
-                        <div class="like-add-to-cart">
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/love-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/cart-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                        </div> 
-                        <div class="details">
-                        <div>
-                            <div class="name">robe moulante</div>
-                            <div class="marque">shein</div>
+                        <a href="#">show all</a>
+                    </div>
+                </div>
+                <div class="categorie-item">
+                    <img src="./images/icons/dress.svg" width="50" height="50" alt="">
+                    <div class="desc">
+                        <div class="title">
+                            <span>crop top</span>
+                            <span>(20)</span>
                         </div>
-                       
-                        <div class="prix"> 2550 xaf</div>
+                        <a href="#">show all</a>
                     </div>
-                        
-                    </div>
-                    <div class="popular-product-item"> 
-                        <div class="img-wrapper">
-                            <img src="./imgs/combishort.png" alt="">
+                </div>
+                <div class="categorie-item">
+                    <img src="./images/icons/dress.svg" width="50" height="50" alt="">
+                    <div class="desc">
+                        <div class="title">
+                            <span>body sweet</span>
+                            <span>(10)</span>
                         </div>
-                         <div class="like-add-to-cart">
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/love-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/cart-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                        </div> 
-                        <div class="details">
-                        <div>
-                            <div class="name">combishort</div>
-                            <div class="marque">zara</div>
+                        <a href="#">show all</a>
+                    </div>
+                </div>
+                <div class="categorie-item">
+                    <img src="./images/icons/dress.svg" width="50" height="50" alt="">
+                    <div class="desc">
+                        <div class="title">
+                            <span>pantalon</span>
+                            <span>(07)</span>
                         </div>
-                       
-                        <div class="prix"> 2300 xaf</div>
+                        <a href="#">show all</a>
                     </div>
-                        
-                    </div>
-                    <div class="popular-product-item"> 
-                        <div class="img-wrapper">
-                            <img src="./imgs/crop-top.png" alt="">
-                        </div>
-                         <div class="like-add-to-cart">
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/love-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/cart-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                        </div> 
-                        <div class="details">
-                        <div>
-                            <div class="name">crop top</div>
-                            <div class="marque">victoria secret</div>
-                        </div>
-                       
-                        <div class="prix"> 1050 xaf</div>
-                    </div>
-                        
-                    </div>
-                    <div class="popular-product-item"> 
-                        <div class="img-wrapper">
-                            <img src="./imgs/tshirt.png" alt="">
-                        </div>
-                         <div class="like-add-to-cart">
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/love-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                            <button>
-                                <div class="img-wrapper">
-                                    <img src="./icons/cart-svgrepo-com.svg" alt="">
-                                </div>
-                            </button>
-                        </div> 
-                        <div class="details">
-                        <div>
-                            <div class="name">t-shirt</div>
-                            <div class="marque">no name</div>
-                        </div>
-                       
-                        <div class="prix"> 2150 xaf</div>
-                    </div>
-                        
-                    </div>
+                </div>
             </div>
         </div>
 
-        <p class="para1">New arrival</p>
+        <div class="products">
+            <h3>en vente</h3>
+            <div class="products-container">
+                <div class="product-item">
+                    <div class="imgs">
+                        <img class="default" src="./images/IMG_20221012_204047.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/IMG_20221012_204054.jpg" width="400" height="400" alt="">
+                    </div>
+                    <div class="actions">
+                        <button class="action-btn">
+                            <ion-icon name="bag-handle-outline"></ion-icon> 
+                          </button>
+                          <button class="action-btn">
+                            <ion-icon name="heart-outline"></ion-icon> 
+                          </button>
+                    </div>
 
-        <div class="new-arrival-wrapper"> 
-                
-                <div class="arrival-item"> 
-                    <div class="img-wrapper">
-                        <img src="./imgs/body_sweat.png" alt="">
-                    </div> 
-                   <div class="details">
-                        <div>
-                            <div class="name">body sweat</div>
-                            <div class="marque">zalando</div>
-                        </div>
-                       
-                        <div class="prix"> 2550 xaf</div>
-                    </div>
-                    <div class="add-to">
-                        <button>
-                            <img src="./icons/cart-svgrepo-com.svg" alt="">
-                        </button>
+                    <div class="description">
+                        <div class="categorie">Combishort</div>
+                        <div class="name">combishort fleurie</div>
+                        <div class="price">2 000 xaf</div>
                     </div>
                 </div>
-                <div class="arrival-item"> 
-                    <div class="img-wrapper">
-                        <img src="./imgs/2-removebg-preview-min.png" alt="">
-                    </div> 
-                   <div class="details">
-                        <div>
-                            <div class="name">robe</div>
-                            <div class="marque">H & M</div>
-                        </div>
-                       
-                        <div class="prix"> 3350 xaf</div>
+                <div class="product-item">
+                    <div class="imgs">
+                        <img class="default" src="./images/IMG_20221012_203750.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/IMG_20221012_203756.jpg" width="400" height="400" alt="">
                     </div>
-                   <div class="add-to">
-                    <button>
-                        <img src="./icons/cart-svgrepo-com.svg" alt="">
-                    </button>
-                   </div>
+                    <div class="actions">
+                        <button class="action-btn">
+                            <ion-icon name="bag-handle-outline"></ion-icon> 
+                          </button>
+                          <button class="action-btn">
+                            <ion-icon name="heart-outline"></ion-icon> 
+                          </button>
+                    </div>
+
+                    <div class="description">
+                        <div class="categorie">Short</div>
+                        <div class="name">Short de lage</div>
+                        <div class="price">1 500 xaf</div>
+                    </div>
                 </div>
-                <div class="arrival-item"> 
-                    <div class="img-wrapper">
-                        <img src="./imgs/3-removebg-preview-min.png" alt="">
-                    </div> 
-                    <div class="details">
-                        <div>
-                            <div class="name">robe dentellée</div>
-                            <div class="marque">Jacquemus</div>
-                        </div>
-                       
-                        <div class="prix"> 3050 xaf</div>
+                <div class="product-item">
+                    <div class="imgs">
+                        <img class="default" src="./images/IMG_20221012_204208.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/IMG_20221012_204217.jpg" width="400" height="400" alt="">
                     </div>
-                   <div class="add-to">
-                    <button>
-                        <img src="./icons/cart-svgrepo-com.svg" alt="">
-                    </button>
-                   </div>
+                    <div class="actions">
+                        <button class="action-btn">
+                            <ion-icon name="bag-handle-outline"></ion-icon> 
+                          </button>
+                          <button class="action-btn">
+                            <ion-icon name="heart-outline"></ion-icon> 
+                          </button>
+                    </div>
+
+                    <div class="description">
+                        <div class="categorie">Combishort</div>
+                        <div class="name">Combishort blanche</div>
+                        <div class="price">2 000 xaf</div>
+                    </div>
                 </div>
-                <div class="arrival-item"> 
-                    <div class="img-wrapper">
-                        <img src="./imgs/6-removebg-preview-min.png" alt="">
-                    </div> 
-                   <div class="details">
-                        <div>
-                            <div class="name">robe</div>
-                            <div class="marque">Bottega Veneta</div>
-                        </div>
-                       
-                        <div class="prix"> 2150 xaf</div>
+
+                <div class="product-item">
+                    <div class="imgs">
+                        <img class="default" src="./images/products/jacket-5.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/products/jacket-6.jpg" width="400" height="400" alt="">
                     </div>
-                   <div class="add-to">
-                    <button>
-                        <img src="./icons/cart-svgrepo-com.svg" alt="">
-                    </button>
-                   </div>
+                    <div class="actions">
+                        <button class="action-btn">
+                            <ion-icon name="bag-handle-outline"></ion-icon> 
+                          </button>
+                          <button class="action-btn">
+                            <ion-icon name="heart-outline"></ion-icon> 
+                          </button>
+                    </div>
+
+                    <div class="description">
+                        <div class="categorie">jacket</div>
+                        <div class="name">jacket en cuir noir</div>
+                        <div class="price">2 000 xaf</div>
+                    </div>
                 </div>
-                <div class="arrival-item"> 
-                    <div class="img-wrapper">
-                        <img src="./imgs/5-removebg-preview-min.png" alt="">
-                    </div> 
-                   <div class="details">
-                        <div>
-                            <div class="name">robe dentellée</div>
-                            <div class="marque">Prada</div>
-                        </div>
-                       
-                        <div class="prix"> 2350 xaf</div>
-                    </div>
-                   <div class="add-to">
-                    <button>
-                        <img src="./icons/cart-svgrepo-com.svg" alt="">
-                    </button>
-                   </div>
-                </div> 
-        </div>
+            </div>
+        </div> 
     </div>
+      <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script>
-        ScrollReveal({ reset: true });
-        ScrollReveal().reveal('.arrival-item', { delay: 500 }); 
-    </script>
+   <script src="./index.js"></script>
 </body>
 </html>
