@@ -138,21 +138,22 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 16;
     position: fixed;
     height: 100vh;
-    width: 30%;
+    width: 100%;
+    opacity: 0;
     top: 0;
     left: 0;
     visibility: hidden;
-    transition: .5s ease ;
+    transition: .5s linear ;
 }
 .overlay.active{
-    width: 100%;
+    opacity: 1;
     visibility: visible;
     background-image: linear-gradient(rgba(169, 239, 251, 0.231),rgba(117, 203, 247, 0.281)); 
 }
 
 .main-container{   
     width: 100%;
-    transition: filter .7s .4s ease-in;
+    transition: filter .7s .1s linear;
 }
 .main-container.blur{
     filter: blur(2px);
@@ -610,13 +611,15 @@ body::-webkit-scrollbar-thumb:hover {
     grid-template-rows: .6fr 5fr .4fr;
     gap: 10px;
     overflow: hidden;
-    transition: .5s ease .1s;
+    transition: .5s linear .1s;
 }
 
 .mobile-sidebar.active{
+    transition: .5s linear .1s;
     transform: translateX(0%);
 
 }
+
 .mobile-sidebar .header{ 
     border-bottom: solid 1px var(--cultured); 
     display: flex;
@@ -865,15 +868,16 @@ footer .copyright{
     overflow: hidden;
     overflow-y: scroll; 
     overscroll-behavior-block: contain;
-    scroll-snap-type: inline mandatory;
-    transition: 2s ease .1s;
+    transition: 1.2s linear .1s ;
+    scroll-snap-type: inline mandatory;  
 }
 
 .shop-cart.active{ 
+    transition: 1.2s linear .1s ;
     transform: translateY(0%);
 
-}
-
+} 
+ 
 .shop-cart .header{
     background-color: rgb(255, 255, 255);
     display: flex;
