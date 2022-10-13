@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .main-container{   
     width: 100%;
-    transition: filter .7s .1s linear;
+    transition: filter .7s .3s linear;
 }
 .main-container.blur{
     filter: blur(2px);
@@ -611,11 +611,13 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 10px;
     overflow: hidden; 
     visibility: hidden;
-    transition: 0.5s ease;
+    opacity: 0;
+    transition: 1.5s ease;
 }
 
 .mobile-sidebar.active{ 
     visibility: visible;
+    opacity: 1;
     left: 0;
 
 }
@@ -856,8 +858,8 @@ footer .copyright{
     height: 100%;
     position: fixed;
     margin-inline: 0 auto;
-    top: -100%;
-    left: 0; 
+    right: -100%;
+    top:0; 
     margin-left: auto;
     text-transform: capitalize; 
     padding: 10px 3px; 
@@ -869,13 +871,14 @@ footer .copyright{
     scroll-snap-type: inline mandatory;   
     z-index: 30;
     visibility: hidden;
-    transition: 0.5s ease;
+    opacity: 0;
+    transition: 1.5s ease .2s;
 }
 
 .shop-cart.active{  
     visibility: visible;
-   top: 0;
-
+    right: 0;
+    opacity: 1;
 } 
  
 .shop-cart .header{
