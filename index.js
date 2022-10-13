@@ -18,16 +18,16 @@ function closeModal(){
 }
 
 function toggleSidebar(){
-    // data_overlay.classList.toggle('active')
+    data_overlay.classList.toggle('active')
     data_mobile_sidebar.classList.toggle('active') 
-    // data_mobile_bottom_menu.classList.toggle('disabled')
+    data_mobile_bottom_menu.classList.toggle('disabled')
     main_container.classList.toggle('blur')
 }
 
 function toggleCart(){
-    // data_overlay.classList.toggle('active')
+    data_overlay.classList.toggle('active')
     data_cart_list.classList.toggle('active') 
-    // data_mobile_bottom_menu.classList.toggle('disabled')
+    data_mobile_bottom_menu.classList.toggle('disabled')
     main_container.classList.toggle('blur')
 }
 
