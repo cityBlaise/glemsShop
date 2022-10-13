@@ -142,11 +142,11 @@ body::-webkit-scrollbar-thumb:hover {
     top: 0;
     left: 0;
     visibility: hidden;
-    transition: .5s ease .1s;
+    transition: .5s ease ;
 }
 .overlay.active{
     width: 100%;
-   visibility: visible;
+    visibility: visible;
     background-image: linear-gradient(rgba(169, 239, 251, 0.231),rgba(117, 203, 247, 0.281)); 
 }
 
@@ -177,7 +177,7 @@ body::-webkit-scrollbar-thumb:hover {
     visibility: hidden;
     opacity: 0;
     justify-content: center; 
-    transition: 1.5s ease;
+    transition: 1s ease;
 }
 
 .modal.active{
@@ -863,17 +863,13 @@ footer .copyright{
     display: grid;
     grid-template-rows: .3fr 4fr .5fr; 
     overflow: hidden;
-    overflow-y: scroll;
-    opacity: 0;
-    visibility: hidden;
+    overflow-y: scroll; 
     overscroll-behavior-block: contain;
     scroll-snap-type: inline mandatory;
     transition: 2s ease .1s;
 }
 
-.shop-cart.active{
-    opacity: 1;
-    visibility: visible;
+.shop-cart.active{ 
     transform: translateY(0%);
 
 }
