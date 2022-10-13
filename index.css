@@ -603,7 +603,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 17;
+    z-index: 30;
     padding: 10px;
     padding-right: 20px; 
     display: grid;
@@ -611,7 +611,7 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 10px;
     overflow: hidden;
     transform: translateX(-100%);
-    transition:   .6s ease-in;
+    transition:   1.3s linear;
 }
 
 .mobile-sidebar.active{ 
@@ -858,7 +858,7 @@ footer .copyright{
     top: 0;
     left: 0; 
     margin-left: auto;
-    z-index: 18;
+    z-index: 30;
     text-transform: capitalize; 
     padding: 10px 3px; 
     display: grid;
@@ -868,7 +868,7 @@ footer .copyright{
     overscroll-behavior-block: contain;
     scroll-snap-type: inline mandatory;  
     transform: translateX(120%);
-    transition:  1s ease ;
+    transition:  1.4s linear ;
 }
 
 .shop-cart.active{  
