@@ -611,11 +611,10 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 10px;
     overflow: hidden;
     transform: translateX(-100%);
-    transition: transform .5s ease-in;
+    transition: transform 1s ease-in;
 }
 
-.mobile-sidebar.active{
-    transition: transform .5s ease;
+.mobile-sidebar.active{ 
     transform: translateX(0%);
 
 }
@@ -869,11 +868,10 @@ footer .copyright{
     overscroll-behavior-block: contain;
     scroll-snap-type: inline mandatory;  
     transform: translateY(120%);
-    transition:transform 1.2s ease-in ;
+    transition:transform 1s ease-in ;
 }
 
-.shop-cart.active{ 
-    transition:transform 1.2s ease-in ;
+.shop-cart.active{  
     transform: translateY(0%);
 
 } 
