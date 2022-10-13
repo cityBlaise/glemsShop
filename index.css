@@ -611,11 +611,11 @@ body::-webkit-scrollbar-thumb:hover {
     grid-template-rows: .6fr 5fr .4fr;
     gap: 10px;
     overflow: hidden;
-    transition: .5s linear .1s;
+    transition: transform .5s ease-in;
 }
 
 .mobile-sidebar.active{
-    transition: .5s linear .1s;
+    transition: transform .5s ease;
     transform: translateX(0%);
 
 }
@@ -868,12 +868,12 @@ footer .copyright{
     overflow: hidden;
     overflow-y: scroll; 
     overscroll-behavior-block: contain;
-    transition: 1.2s linear .1s ;
+    transition:transform 1.2s ease-in ;
     scroll-snap-type: inline mandatory;  
 }
 
 .shop-cart.active{ 
-    transition: 1.2s linear .1s ;
+    transition:transform 1.2s ease-in ;
     transform: translateY(0%);
 
 } 
