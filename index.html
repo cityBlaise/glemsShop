@@ -18,11 +18,17 @@
     <title>The woman eshop made by womans for womans</title>
 </head>
 <body >
- 
+ <!-- 
+    OVERLAY
+ -->
         <div class="overlay"  data-overlay></div>
-        <div class="modal active" data-modal>
+
+<!-- 
+    MODAL OVERLAY
+ -->
+        <div class="modal  active" data-modal>
     
-            <div class="modal-close-overlay  active" data-modal-overlay></div>
+            <div class="modal-close-overlay active " data-modal-overlay></div>
         
             <div class="modal-content">
         
@@ -52,22 +58,193 @@
                     <div class="social-item"><span><ion-icon name="logo-tiktok"></ion-icon></span><b>glem.s_collection</b></div>
                     <div style="display: none;" class="social-item"><span><ion-icon name="logo-whatsapp"></ion-icon></span></div>
                  </div>
-        
-                  <button type="button" class="btn-newsletter">Done</button>
-        
-               
-        
+         
               </div>
         
             </div>
         
           </div>
-          <div class="main-container blur">
-        <div class="brand-header">
-            <div class="img"> <img  src="./images/android-chrome-192x192.png" alt=""></div>
-           
-           <span>glem's</span> 
+<!-- 
+    MOBILE BOTTOM MENU 
+ -->
+          <div class="mobile-bottom-menu" data-mobile-bottom-menu>
+            <button class="action-btn" data-cart-btn>
+                <ion-icon name="bag-handle-outline" ></ion-icon>
+        
+                <span class="count">17</span>
+              </button>
+        
+            <button class="action-btn">
+                <ion-icon name="home-outline"></ion-icon>
+            </button>
+            <button class="action-btn">
+                <ion-icon name="heart-outline"></ion-icon>
+        
+                <span class="count">0</span>
+              </button>
+        
+              <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="grid-outline"></ion-icon>
+              </button>
         </div>
+
+
+<!-- 
+    SHOP CART
+ -->
+    <div class="shop-cart" data-cart-list>
+        <div class="header"> 
+           
+          
+            <button class="action-btn" data-cart-close>
+                <ion-icon name="arrow-undo-outline"></ion-icon>
+            </button>
+            <span class="title">Mon panier</span>
+            <span class="cart-btn">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span class="count">17</span>
+          </span>
+        </div>
+        <div class="items-wrapper">
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="btn-remove" data-item-remove></button>
+                <div class="img">
+                    <img  width="100" height="100" src="./images/products/shirt-1.jpg" alt="">
+                </div>
+                <div class="description">
+                    <div class="name-size">
+                        <div class="name">chemise xyz</div>
+                        <div class="size">size M</div>
+                    </div>
+                    <div class="price">3 000 xaf</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="total-price">
+            <div class="nombre-total">
+                <span>nombre de pièces</span>
+                <span class="number">17</span>
+            </div>
+            <div class="prix-total">
+                <span>montant total</span>
+                <div class="total">45 000 xaf</div>
+            </div>
+        </div>
+        <a href="https://wa.me/696173340"><button class="order">commander <ion-icon name="cart-outline"></ion-icon> </button></a>
+    </div>
+<!-- 
+    MOBILE SIDEBAR MENU 
+ -->
+
+          <div class="mobile-sidebar" data-mobile-sidebar>
+            <div class="header">
+                <div class="title">Menu</div>
+                <button data-sidebar-menu-close-btn></button>
+            </div>
+            <div class="wrapper">
+                <h2>categorie</h2>
+                <ul class="content">
+                    <li><button><span class="name">Robe</span><span class="number">(20)</span></button></li>
+                    <li><button><span class="name">Combishort</span><span class="number">(40)</span></button></li>
+                    <li><button><span class="name">Crop top</span><span class="number">(20)</span></button></li>
+                    <li><button><span class="name">Body Sweet</span><span class="number">(10)</span></button></li>
+                    <li><button><span class="name">Robe</span><span class="number">(20)</span></button></li>
+                </ul>
+            </div>
+            <div class="social-media-wrapper">
+                <div >rejoins nous</div>
+                <div class="social-media">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </div>
+        </div>
+<div class="main-container  ">
+    <div class="brand-header">
+        <div class="img"> <img  src="./images/android-chrome-192x192.png" alt=""></div>
+       
+       <span>glem's</span> 
+    </div>
         <header class="header">
            
             <div class="header-banner">
@@ -77,26 +254,7 @@
                 </div>
             </div>
 
-            <div class="mobile-bottom-menu">
-                <button class="action-btn">
-                    <ion-icon name="bag-handle-outline"></ion-icon>
-            
-                    <span class="count">0</span>
-                  </button>
-            
-                <button class="action-btn">
-                    <ion-icon name="home-outline"></ion-icon>
-                </button>
-                <button class="action-btn">
-                    <ion-icon name="heart-outline"></ion-icon>
-            
-                    <span class="count">0</span>
-                  </button>
-            
-                  <button class="action-btn" data-mobile-menu-open-btn>
-                    <ion-icon name="grid-outline"></ion-icon>
-                  </button>
-            </div>
+           
         </header> 
 
         <div class="categorie">
@@ -159,8 +317,8 @@
             <div class="products-container">
                 <div class="product-item">
                     <div class="imgs">
-                        <img class="default" src="./images/IMG_20221012_204047.jpg"  width="400" height="400" alt="">
-                        <img class="hover" src="./images/IMG_20221012_204054.jpg" width="400" height="400" alt="">
+                        <img class="default" src="./images/products/shirt-1.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/products/shirt-2.jpg" width="400" height="400" alt="">
                     </div>
                     <div class="actions">
                         <button class="action-btn">
@@ -179,8 +337,8 @@
                 </div>
                 <div class="product-item">
                     <div class="imgs">
-                        <img class="default" src="./images/IMG_20221012_203750.jpg"  width="400" height="400" alt="">
-                        <img class="hover" src="./images/IMG_20221012_203756.jpg" width="400" height="400" alt="">
+                        <img class="default" src="./images/products/shorts-1.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/products/shorts-2.jpg" width="300" height="400" alt="">
                     </div>
                     <div class="actions">
                         <button class="action-btn">
@@ -193,14 +351,14 @@
 
                     <div class="description">
                         <div class="categorie">Short</div>
-                        <div class="name">Short de lage</div>
+                        <div class="name">Short de plage</div>
                         <div class="price">1 500 xaf</div>
                     </div>
                 </div>
                 <div class="product-item">
                     <div class="imgs">
-                        <img class="default" src="./images/IMG_20221012_204208.jpg"  width="400" height="400" alt="">
-                        <img class="hover" src="./images/IMG_20221012_204217.jpg" width="400" height="400" alt="">
+                        <img class="default" src="./images/products/jacket-1.jpg"  width="400" height="400" alt="">
+                        <img class="hover" src="./images/products/jacket-2.jpg" width="400" height="400" alt="">
                     </div>
                     <div class="actions">
                         <button class="action-btn">
@@ -240,7 +398,47 @@
                 </div>
             </div>
         </div> 
-    </div>
+
+        <div class="paggination">
+            <ul>
+                <li><button>1</button></li> 
+                <li><button>2</button></li> 
+                <li><button>3</button></li> 
+                <li><button>4</button></li> 
+                <li><button>5</button></li> 
+                <li><button>6</button></li> 
+                <li><button>7</button></li> 
+                <li><button>8</button></li> 
+                <li><button>9</button></li> 
+            </ul>
+        </div>
+        <footer>
+            <div class="contact">
+                <h3>contact</h3>
+                <ul>
+                    <li> <ion-icon name="location-outline"></ion-icon>cameroun, douala</li>
+                    <li> <ion-icon name="call-outline"></ion-icon>(+237) 6 xx xx xx xx</li>
+                    <li><ion-icon name="mail-outline"></ion-icon>glems..@gmail.com</li>
+                </ul>
+            </div>
+            <div class="follow">
+                <h3>rejoins nous</h3>
+                <div class="social-media">
+                    <button>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright © glem's 2022</div>
+        </footer>
+</div>
       <!--
     - ionicon link
   -->
