@@ -10,6 +10,9 @@ const data_mobile_bottom_menu = document.querySelector('[data-mobile-bottom-menu
 const data_cart_btn = document.querySelector('[data-cart-btn]')
 const data_cart_list = document.querySelector('[data-cart-list]')
 const data_cart_close = document.querySelector('[data-cart-close]')
+const product_items = document.querySelectorAll('.product-item')
+const data_show_product_close = document.querySelectorAll('[data-show-product-close]')
+const shop_cart_items = document.querySelectorAll('.items-wrapper .item')
 
 function closeModal(){
     data_modal_overlay.remove('active')
@@ -63,3 +66,29 @@ data_cart_close.addEventListener('click',(e)=>{
     console.log('data_mobile_menu_open_btn has benn clicked'); 
     toggleCart()
 })
+
+product_items.forEach(element => {
+    element.addEventListener('click',(e)=>{ 
+        if( !element.classList.contains('show')){ 
+            element.classList.toggle('show')
+
+            if(element.classList.contains('normal')){
+                element.classList.toggle('normal')
+            }
+
+        } 
+    }) 
+    element.querySelector('.back-btn').addEventListener('click',(e)=>{  
+        e.currentTarget.parentElement.classList.remove('show')
+        e.currentTarget.parentElement.classList.toggle('normal')
+        e.stopPropagation()
+    })
+});
+
+shop_cart_items.forEach(element => {
+    element.querySelector('.btn-remove').addEventListener('click',(e)=>{  
+        console.log('item cart removed')
+        e.currentTarget.parentElement.classList.toggle('remove') 
+        e.stopPropagation()
+    })
+});
