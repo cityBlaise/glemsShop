@@ -80,7 +80,8 @@ product_items.forEach(element => {
     }) 
     element.querySelector('.back-btn').addEventListener('click',(e)=>{  
         e.currentTarget.parentElement.classList.remove('show')
-        e.currentTarget.parentElement.classList.toggle('normal')
+        e.currentTarget.parentElement.classList.toggle('normal') 
+	e.currentTarget.parentElement.scrollIntoView({block: "center", inline: "center"});
         e.stopPropagation()
     })
 });
@@ -88,7 +89,7 @@ product_items.forEach(element => {
 shop_cart_items.forEach(element => {
     element.querySelector('.btn-remove').addEventListener('click',(e)=>{  
         console.log('item cart removed')
-        e.currentTarget.parentElement.classList.toggle('remove') 
+        e.currentTarget.parentElement.classList.toggle('remove')
         e.stopPropagation()
     })
 });
