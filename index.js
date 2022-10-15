@@ -30,8 +30,7 @@ function toggleSidebar(){
 function toggleCart(){
     data_overlay.classList.toggle('active')
     data_cart_list.classList.toggle('active') 
-    data_mobile_bottom_menu.classList.toggle('disabled')
-    main_container.classList.toggle('blur')
+    data_mobile_bottom_menu.classList.toggle('disabled') 
 }
 
 data_modal_overlay.addEventListener('click',()=>{
