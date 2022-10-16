@@ -101,6 +101,11 @@ body {
    * scrollbar style
    */
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -190,14 +195,14 @@ body::-webkit-scrollbar-thumb:hover {
     left: 0;
     background-image: linear-gradient(rgba(188, 188, 255, 0.735) ,rgba(188, 188, 255, 0.735));
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
     width: 100%; 
     visibility: hidden;
     opacity: 0;
 }
 
 .modal-close-overlay.active{  
-    animation: fadeout 1.5s ease 0s forwards;
+    animation: fadeout .5s linear 0s forwards;
 }
 
 @keyframes fadeout {
@@ -275,7 +280,9 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 15px; 
     font-size: 13px;
 } 
-
+.modal a{
+    color: var(--davys-gray);
+}
 .modal .social-media .social-item{
     display: flex;  
     margin-left: 10px;
@@ -288,15 +295,35 @@ body::-webkit-scrollbar-thumb:hover {
 
 .modal .social-media .social-item span{ 
     color: var(--davys-gray);
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .modal .social-media .social-item ion-icon{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    padding: 7px;
+    border-radius: 5px;
+    transition: .5s linear;
 }
 
  
- 
+.modal .social-media a:nth-child(1):hover ion-icon{
+    background-color: rgba(58, 61, 243, 0.861) ;
+    color: white;
+
+}
+
+.modal .social-media a:nth-child(2):hover  ion-icon{
+    background-color: rgba(0, 0, 0, 0.861) ;
+    color: white;
+
+}
+
+.modal .social-media a:nth-child(3):hover  ion-icon{
+    background-color: rgb(46, 255, 23) ;
+    color: white;
+
+}
+
 
 .main-container .brand-header{ 
     /* position: -webkit-sticky;
@@ -506,8 +533,8 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     gap: 8px;  
     flex-direction: column; 
-    align-items: center;
-    transition: scale 1s ease;
+    align-items: center; 
+    transition: none;
 }
 .product-item:hover{
     box-shadow: 0px 0px 13px 0px rgb(197, 197, 197);
@@ -516,7 +543,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 .product-item.normal{
-    animation: normalProduct .3s linear forwards;
+    animation: normalProduct 1s ease forwards;
 
 }
 
@@ -531,11 +558,13 @@ body::-webkit-scrollbar-thumb:hover {
     flex: 1;   
     height: 100%; 
     width: 100%;
-    position: relative;  
+    position: relative; 
+    transition: none; 
 }
 
 .product-item  img{  
     height: 100%;
+    transition: none; 
     width: 100%;
 }
 
@@ -560,7 +589,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .product-item:hover .imgs{
     transition: .4s ease;
-    transform: scale(1.06)  ;
+    transform: scale(1.05)  ;
 }
  
 .product-item:hover  img.hover{
@@ -690,8 +719,9 @@ body::-webkit-scrollbar-thumb:hover {
     border-color: rgb(254, 184, 240);
 }
 
-.product-item.show  img{ 
-     
+.product-item.show  img{
+    height: 100%; 
+    width: 100%; 
     object-fit: cover;
     scroll-snap-align: start;     
 }
@@ -710,6 +740,7 @@ body::-webkit-scrollbar-thumb:hover {
     overflow-x: scroll;
     overscroll-behavior: contain;
     scroll-snap-type: inline mandatory;
+    transition: none;
 }
 
 .product-item.show  img.default,.product-item.show   img.hover{
@@ -728,10 +759,7 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
 }
 
-.product-item.show:hover .imgs{ 
-    transform: scale(1)  ;
-}
-
+ 
 @keyframes showProduct {
     to{
         transform: scale(1);
@@ -743,7 +771,7 @@ body::-webkit-scrollbar-thumb:hover {
         position: relative  ; 
         z-index: inherit !important;
         width: 100%;
-        transform: scale(1.3);
+        transform: scale(2);
     }
     100%{ 
         transform: scale(1);
@@ -857,7 +885,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: juliaregular;
     margin-bottom: 4px;
 }
-.mobile-sidebar .social-media  ion-icon{
+.mobile-sidebar .social-media a ion-icon{
     cursor: pointer;
     color: rgb(255, 255, 255);
     padding: 5px;
@@ -866,17 +894,17 @@ body::-webkit-scrollbar-thumb:hover {
     transition: .5s ease;
 }
 
-.mobile-sidebar .social-media  ion-icon:nth-child(1):hover{
+.mobile-sidebar .social-media a:nth-child(1):hover ion-icon{
     background-color: rgba(58, 61, 243, 0.861) ;
 
 }
 
-.mobile-sidebar .social-media  ion-icon:nth-child(2):hover{
+.mobile-sidebar .social-media a:nth-child(2):hover  ion-icon{
     background-color: rgba(0, 0, 0, 0.861) ;
 
 }
 
-.mobile-sidebar .social-media  ion-icon:nth-child(3):hover{
+.mobile-sidebar .social-media a:nth-child(3):hover  ion-icon{
     background-color: rgb(46, 255, 23) ;
 
 }
@@ -1028,7 +1056,7 @@ footer .copyright{
     overscroll-behavior-block: contain;
     scroll-snap-type: inline mandatory;   
     z-index: 30; 
-    transition: right 1s ease .1s;
+    transition: right 1.0s linear;
 }
 
 .shop-cart.active{   
@@ -1098,7 +1126,7 @@ footer .copyright{
 }
 
 .shop-cart .items-wrapper .item .img{
-    height: 100%;
+    height: 90%;
     width: 30%;
     overflow: hidden; 
     aspect-ratio: 1/1;
@@ -1108,6 +1136,7 @@ footer .copyright{
     height: 100%;
     width: 100%;
     z-index: 0;
+    object-fit: contain;
 }
 
 .shop-cart .items-wrapper .item .description

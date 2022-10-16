@@ -23,8 +23,7 @@ function closeModal(){
 function toggleSidebar(){
     data_overlay.classList.toggle('active')
     data_mobile_sidebar.classList.toggle('active') 
-    data_mobile_bottom_menu.classList.toggle('disabled')
-    main_container.classList.toggle('blur')
+    data_mobile_bottom_menu.classList.toggle('disabled') 
 }
 
 function toggleCart(){
@@ -70,6 +69,7 @@ product_items.forEach(element => {
     element.addEventListener('click',(e)=>{ 
         if( !element.classList.contains('show')){ 
             element.classList.toggle('show')
+            e.currentTarget.parentNode.querySelector('.imgs img').scrollIntoView({block: "center", inline: "center"})
 
             if(element.classList.contains('normal')){
                 element.classList.toggle('normal')
@@ -80,8 +80,8 @@ product_items.forEach(element => {
     element.querySelector('.back-btn').addEventListener('click',(e)=>{  
         e.currentTarget.parentElement.classList.remove('show')
         e.currentTarget.parentElement.classList.toggle('normal') 
-	e.currentTarget.parentElement.scrollIntoView({block: "center", inline: "center"});
-        e.stopPropagation()
+	    e.currentTarget.parentElement.scrollIntoView({block: "center", inline: "center"});
+        e.stopPropagation() 
     })
 });
 
